@@ -1,0 +1,944 @@
+{
+    "SourceVertexId": 0,
+    "version": "1.0.0",
+    "vertices": {
+        "0": {
+            "id": 0,
+            "iteration": 1,
+            "name": "start"
+        },
+        "1": {
+            "id": 1,
+            "iteration": 2,
+            "name": "iteration: 2\nclass: GradleAnalyser\nname: Gradle",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle - Service"
+                ],
+                "pathMappings": "(Source, , source)\n(Template, /tmp/move2kube1570705655/environment-Gradle-122082805/gradle-transformer-build-251076894/Dockerfile.build.template, source/Dockerfile.buildstage)",
+                "producedArtifacts": [
+                    "java-gradle - War",
+                    "java-gradle-buildstage - Dockerfile"
+                ]
+            }
+        },
+        "10": {
+            "id": 10,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ArgoCD\nname: ArgoCD",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(Default, /tmp/move2kube1570705655/environment-ArgoCD-3986850378/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)\n(Default, /tmp/move2kube1570705655/environment-ArgoCD-3986850378/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)",
+                "producedArtifacts": [
+                    "ArgoCD - KubernetesYamls",
+                    "ArgoCD - KubernetesYamls"
+                ]
+            }
+        },
+        "11": {
+            "id": 11,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        },
+        "12": {
+            "id": 12,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: Knative\nname: Knative",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(Default, /tmp/move2kube1570705655/environment-Knative-3535217955/deploy/knative/java-gradle-service.yaml, deploy/knative/java-gradle-service.yaml)\n(Default, /tmp/move2kube1570705655/environment-Knative-3535217955/deploy/knative/java-gradle-service.yaml, deploy/knative/java-gradle-service.yaml)",
+                "producedArtifacts": [
+                    "Knative - KubernetesYamls",
+                    "Knative - KubernetesYamls"
+                ]
+            }
+        },
+        "13": {
+            "id": 13,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        },
+        "14": {
+            "id": 14,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: BuildConfig\nname: Buildconfig",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": []
+            }
+        },
+        "15": {
+            "id": 15,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ContainerImagesPushScript\nname: ContainerImagesPushScriptGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - NewImages",
+                    "myproject - NewImages"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/containerimagespushscript/templates, scripts)",
+                "producedArtifacts": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "16": {
+            "id": 16,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        },
+        "17": {
+            "id": 17,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: Kubernetes\nname: Kubernetes",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube1570705655/environment-Kubernetes-3996656365/k8s-yamls-8498081, {{ .OutputPath9727887 }})\n(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube1570705655/environment-Kubernetes-3996656365/k8s-yamls-7131847, {{ .OutputPath9984059 }})",
+                "producedArtifacts": [
+                    "java-gradle - KubernetesYamls",
+                    "java-gradle - KubernetesYamls"
+                ]
+            }
+        },
+        "18": {
+            "id": 18,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        },
+        "19": {
+            "id": 19,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: Tekton\nname: Tekton",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube1570705655/environment-Tekton-2342535375/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)",
+                "producedArtifacts": [
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "2": {
+            "id": 2,
+            "iteration": 2,
+            "name": "iteration: 2\nclass: Router\nname: WarRouter",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle - War",
+                    "java-gradle - War"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "java-gradle - War",
+                    "java-gradle - War"
+                ]
+            }
+        },
+        "20": {
+            "id": 20,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ComposeGenerator\nname: ComposeGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(Default, /tmp/move2kube1570705655/environment-ComposeGenerator-3436052409/deploy/compose, deploy/compose)\n(Default, /tmp/move2kube1570705655/environment-ComposeGenerator-3436052409/deploy/compose, deploy/compose)",
+                "producedArtifacts": []
+            }
+        },
+        "21": {
+            "id": 21,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ReadMeGenerator\nname: ReadMeGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript",
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/readmegenerator/templates, )",
+                "producedArtifacts": []
+            }
+        },
+        "22": {
+            "id": 22,
+            "iteration": 6,
+            "name": "iteration: 6\nclass: Parameterizer\nname: Parameterizer",
+            "data": {
+                "consumedArtifacts": [
+                    "ArgoCD - KubernetesYamls",
+                    "Knative - KubernetesYamls",
+                    "java-gradle - KubernetesYamls",
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
+                ],
+                "pathMappings": "(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/3536882599/argocd-parameterized/helm, {{ .HelmPath1902081 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/3536882599/argocd-parameterized/kustomize, {{ .KustomizePath4941318 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/3536882599/argocd-parameterized/octemplates, {{ .OCTemplatePath954425 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2369453548/knative-parameterized/helm, {{ .HelmPath6122540 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2369453548/knative-parameterized/kustomize, {{ .KustomizePath8240456 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2369453548/knative-parameterized/octemplates, {{ .OCTemplatePath6203300 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/746526190/yamls-parameterized/helm, {{ .HelmPath6410694 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/746526190/yamls-parameterized/kustomize, {{ .KustomizePath7278511 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/746526190/yamls-parameterized/octemplates, {{ .OCTemplatePath128162 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/786191446/tekton-parameterized/helm, {{ .HelmPath7455089 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/786191446/tekton-parameterized/kustomize, {{ .KustomizePath3024728 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/786191446/tekton-parameterized/octemplates, {{ .OCTemplatePath6933274 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2225789441/tekton-parameterized/helm, {{ .HelmPath7811211 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2225789441/tekton-parameterized/kustomize, {{ .KustomizePath9431445 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube1570705655/environment-Parameterizer-1016269469/2225789441/tekton-parameterized/octemplates, {{ .OCTemplatePath8323237 }})",
+                "producedArtifacts": []
+            }
+        },
+        "23": {
+            "id": 23,
+            "iteration": 6,
+            "name": "iteration: 6\nclass: ReadMeGenerator\nname: ReadMeGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "ArgoCD - KubernetesYamls",
+                    "Knative - KubernetesYamls",
+                    "ContainerImagesPushScript - ContainerImagesPushScript",
+                    "java-gradle - KubernetesYamls",
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/readmegenerator/templates, )",
+                "producedArtifacts": []
+            }
+        },
+        "3": {
+            "id": 3,
+            "iteration": 3,
+            "name": "iteration: 3\nclass: Liberty\nname: Liberty",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle - War",
+                    "java-gradle - War"
+                ],
+                "pathMappings": "(Source, , source)\n(Template, /tmp/move2kube1570705655/environment-Liberty-297109956/java-gradle/Dockerfile, source)\n(Source, , source)\n(Template, /tmp/move2kube1570705655/environment-Liberty-297109956/java-gradle/Dockerfile, source)",
+                "producedArtifacts": [
+                    "java-gradle - Dockerfile",
+                    "java-gradle - DockerfileForService",
+                    "java-gradle - Dockerfile",
+                    "java-gradle - DockerfileForService"
+                ]
+            }
+        },
+        "4": {
+            "id": 4,
+            "iteration": 3,
+            "name": "iteration: 3\nclass: DockerfileImageBuildScript\nname: DockerfileImageBuildScript",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle-buildstage - Dockerfile",
+                    "java-gradle-buildstage - Dockerfile"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/dockerfile/dockerimagebuildscript/templates, scripts)",
+                "producedArtifacts": [
+                    "myproject - NewImages",
+                    "ContainerImageBuildScript - ContainerImageBuildScript"
+                ]
+            }
+        },
+        "5": {
+            "id": 5,
+            "iteration": 4,
+            "name": "iteration: 4\nclass: DockerfileImageBuildScript\nname: DockerfileImageBuildScript",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle - Dockerfile",
+                    "java-gradle - Dockerfile"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/dockerfile/dockerimagebuildscript/templates, scripts)",
+                "producedArtifacts": [
+                    "myproject - NewImages",
+                    "myproject - NewImages",
+                    "ContainerImageBuildScript - ContainerImageBuildScript"
+                ]
+            }
+        },
+        "6": {
+            "id": 6,
+            "iteration": 4,
+            "name": "iteration: 4\nclass: ContainerImagesPushScript\nname: ContainerImagesPushScriptGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - NewImages",
+                    "myproject - NewImages"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube1570705655/m2kassets/built-in/transformers/containerimagespushscript/templates, scripts)",
+                "producedArtifacts": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "7": {
+            "id": 7,
+            "iteration": 4,
+            "name": "iteration: 4\nclass: DockerfileParser\nname: DockerfileParser",
+            "data": {
+                "consumedArtifacts": [
+                    "java-gradle - DockerfileForService",
+                    "java-gradle - DockerfileForService"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "8": {
+            "id": 8,
+            "iteration": 4,
+            "name": "iteration: 4\nclass: ZuulAnalyser\nname: ZuulAnalyser",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        },
+        "9": {
+            "id": 9,
+            "iteration": 5,
+            "name": "iteration: 5\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "",
+                "producedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ]
+            }
+        }
+    },
+    "edges": {
+        "0": {
+            "id": 0,
+            "from": 0,
+            "to": 1,
+            "name": "0 -\u003e 1",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - Service"
+                ]
+            }
+        },
+        "1": {
+            "id": 1,
+            "from": 1,
+            "to": 2,
+            "name": "1 -\u003e 2",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - War"
+                ]
+            }
+        },
+        "10": {
+            "id": 10,
+            "from": 4,
+            "to": 6,
+            "name": "4 -\u003e 6",
+            "data": {
+                "newArtifact": [
+                    "myproject - NewImages"
+                ]
+            }
+        },
+        "11": {
+            "id": 11,
+            "from": 3,
+            "to": 7,
+            "name": "3 -\u003e 7",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - DockerfileForService"
+                ]
+            }
+        },
+        "12": {
+            "id": 12,
+            "from": 3,
+            "to": 7,
+            "name": "3 -\u003e 7",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - DockerfileForService"
+                ]
+            }
+        },
+        "13": {
+            "id": 13,
+            "from": 7,
+            "to": 8,
+            "name": "7 -\u003e 8",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "14": {
+            "id": 14,
+            "from": 7,
+            "to": 8,
+            "name": "7 -\u003e 8",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "15": {
+            "id": 15,
+            "from": 8,
+            "to": 9,
+            "name": "8 -\u003e 9",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "16": {
+            "id": 16,
+            "from": 8,
+            "to": 9,
+            "name": "8 -\u003e 9",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "17": {
+            "id": 17,
+            "from": 8,
+            "to": 10,
+            "name": "8 -\u003e 10",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "18": {
+            "id": 18,
+            "from": 8,
+            "to": 10,
+            "name": "8 -\u003e 10",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "19": {
+            "id": 19,
+            "from": 8,
+            "to": 11,
+            "name": "8 -\u003e 11",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "2": {
+            "id": 2,
+            "from": 1,
+            "to": 2,
+            "name": "1 -\u003e 2",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - War"
+                ]
+            }
+        },
+        "20": {
+            "id": 20,
+            "from": 8,
+            "to": 11,
+            "name": "8 -\u003e 11",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "21": {
+            "id": 21,
+            "from": 8,
+            "to": 12,
+            "name": "8 -\u003e 12",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "22": {
+            "id": 22,
+            "from": 8,
+            "to": 12,
+            "name": "8 -\u003e 12",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "23": {
+            "id": 23,
+            "from": 8,
+            "to": 13,
+            "name": "8 -\u003e 13",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "24": {
+            "id": 24,
+            "from": 8,
+            "to": 13,
+            "name": "8 -\u003e 13",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "25": {
+            "id": 25,
+            "from": 8,
+            "to": 14,
+            "name": "8 -\u003e 14",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "26": {
+            "id": 26,
+            "from": 8,
+            "to": 14,
+            "name": "8 -\u003e 14",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "27": {
+            "id": 27,
+            "from": 4,
+            "to": 15,
+            "name": "4 -\u003e 15",
+            "data": {
+                "newArtifact": [
+                    "myproject - NewImages"
+                ]
+            }
+        },
+        "28": {
+            "id": 28,
+            "from": 4,
+            "to": 15,
+            "name": "4 -\u003e 15",
+            "data": {
+                "newArtifact": [
+                    "myproject - NewImages"
+                ]
+            }
+        },
+        "29": {
+            "id": 29,
+            "from": 8,
+            "to": 16,
+            "name": "8 -\u003e 16",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "3": {
+            "id": 3,
+            "from": 2,
+            "to": 3,
+            "name": "2 -\u003e 3",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - War"
+                ]
+            }
+        },
+        "30": {
+            "id": 30,
+            "from": 8,
+            "to": 16,
+            "name": "8 -\u003e 16",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "31": {
+            "id": 31,
+            "from": 8,
+            "to": 17,
+            "name": "8 -\u003e 17",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "32": {
+            "id": 32,
+            "from": 8,
+            "to": 17,
+            "name": "8 -\u003e 17",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "33": {
+            "id": 33,
+            "from": 8,
+            "to": 18,
+            "name": "8 -\u003e 18",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "34": {
+            "id": 34,
+            "from": 8,
+            "to": 18,
+            "name": "8 -\u003e 18",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "35": {
+            "id": 35,
+            "from": 8,
+            "to": 19,
+            "name": "8 -\u003e 19",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "36": {
+            "id": 36,
+            "from": 8,
+            "to": 19,
+            "name": "8 -\u003e 19",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "37": {
+            "id": 37,
+            "from": 8,
+            "to": 20,
+            "name": "8 -\u003e 20",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "38": {
+            "id": 38,
+            "from": 8,
+            "to": 20,
+            "name": "8 -\u003e 20",
+            "data": {
+                "newArtifact": [
+                    "myproject - IR"
+                ]
+            }
+        },
+        "39": {
+            "id": 39,
+            "from": 6,
+            "to": 21,
+            "name": "6 -\u003e 21",
+            "data": {
+                "newArtifact": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "4": {
+            "id": 4,
+            "from": 2,
+            "to": 3,
+            "name": "2 -\u003e 3",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - War"
+                ]
+            }
+        },
+        "40": {
+            "id": 40,
+            "from": 6,
+            "to": 21,
+            "name": "6 -\u003e 21",
+            "data": {
+                "newArtifact": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "41": {
+            "id": 41,
+            "from": 10,
+            "to": 22,
+            "name": "10 -\u003e 22",
+            "data": {
+                "newArtifact": [
+                    "ArgoCD - KubernetesYamls"
+                ]
+            }
+        },
+        "42": {
+            "id": 42,
+            "from": 12,
+            "to": 22,
+            "name": "12 -\u003e 22",
+            "data": {
+                "newArtifact": [
+                    "Knative - KubernetesYamls"
+                ]
+            }
+        },
+        "43": {
+            "id": 43,
+            "from": 17,
+            "to": 22,
+            "name": "17 -\u003e 22",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - KubernetesYamls"
+                ]
+            }
+        },
+        "44": {
+            "id": 44,
+            "from": 19,
+            "to": 22,
+            "name": "19 -\u003e 22",
+            "data": {
+                "newArtifact": [
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "45": {
+            "id": 45,
+            "from": 19,
+            "to": 22,
+            "name": "19 -\u003e 22",
+            "data": {
+                "newArtifact": [
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "46": {
+            "id": 46,
+            "from": 10,
+            "to": 23,
+            "name": "10 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "ArgoCD - KubernetesYamls"
+                ]
+            }
+        },
+        "47": {
+            "id": 47,
+            "from": 12,
+            "to": 23,
+            "name": "12 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "Knative - KubernetesYamls"
+                ]
+            }
+        },
+        "48": {
+            "id": 48,
+            "from": 6,
+            "to": 23,
+            "name": "6 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "49": {
+            "id": 49,
+            "from": 17,
+            "to": 23,
+            "name": "17 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - KubernetesYamls"
+                ]
+            }
+        },
+        "5": {
+            "id": 5,
+            "from": 1,
+            "to": 4,
+            "name": "1 -\u003e 4",
+            "data": {
+                "newArtifact": [
+                    "java-gradle-buildstage - Dockerfile"
+                ]
+            }
+        },
+        "50": {
+            "id": 50,
+            "from": 19,
+            "to": 23,
+            "name": "19 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "51": {
+            "id": 51,
+            "from": 19,
+            "to": 23,
+            "name": "19 -\u003e 23",
+            "data": {
+                "newArtifact": [
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "6": {
+            "id": 6,
+            "from": 1,
+            "to": 4,
+            "name": "1 -\u003e 4",
+            "data": {
+                "newArtifact": [
+                    "java-gradle-buildstage - Dockerfile"
+                ]
+            }
+        },
+        "7": {
+            "id": 7,
+            "from": 3,
+            "to": 5,
+            "name": "3 -\u003e 5",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - Dockerfile"
+                ]
+            }
+        },
+        "8": {
+            "id": 8,
+            "from": 3,
+            "to": 5,
+            "name": "3 -\u003e 5",
+            "data": {
+                "newArtifact": [
+                    "java-gradle - Dockerfile"
+                ]
+            }
+        },
+        "9": {
+            "id": 9,
+            "from": 4,
+            "to": 6,
+            "name": "4 -\u003e 6",
+            "data": {
+                "newArtifact": [
+                    "myproject - NewImages"
+                ]
+            }
+        }
+    }
+}
