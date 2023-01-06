@@ -18,6 +18,44 @@ metadata:
   clustername: ""
   managedfields: []
 objects:
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      creationTimestamp: null
+      labels:
+        move2kube.konveyor.io/service: java-gradle
+      name: java-gradle
+    spec:
+      ports:
+        - name: port-8080
+          port: 8080
+          targetPort: 8080
+      selector:
+        move2kube.konveyor.io/service: java-gradle
+      type: ClusterIP
+    status:
+      loadBalancer: {}
+  - apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      creationTimestamp: null
+      labels:
+        move2kube.konveyor.io/service: myproject
+      name: myproject
+    spec:
+      rules:
+        - host: myproject.com
+          http:
+            paths:
+              - backend:
+                  service:
+                    name: java-gradle
+                    port:
+                      name: port-8080
+                path: /java-gradle
+                pathType: Prefix
+    status:
+      loadBalancer: {}
   - apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -43,49 +81,11 @@ objects:
               imagePullPolicy: Always
               name: java-gradle
               ports:
-                - containerPort: 9080
+                - containerPort: 8080
               resources: {}
           restartPolicy: Always
           securityContext: {}
     status: {}
-  - apiVersion: v1
-    kind: Service
-    metadata:
-      creationTimestamp: null
-      labels:
-        move2kube.konveyor.io/service: java-gradle
-      name: java-gradle
-    spec:
-      ports:
-        - name: port-9080
-          port: 9080
-          targetPort: 9080
-      selector:
-        move2kube.konveyor.io/service: java-gradle
-      type: ClusterIP
-    status:
-      loadBalancer: {}
-  - apiVersion: networking.k8s.io/v1
-    kind: Ingress
-    metadata:
-      creationTimestamp: null
-      labels:
-        move2kube.konveyor.io/service: myproject
-      name: myproject
-    spec:
-      rules:
-        - host: myproject.com
-          http:
-            paths:
-              - backend:
-                  service:
-                    name: java-gradle
-                    port:
-                      name: port-9080
-                path: /java-gradle
-                pathType: Prefix
-    status:
-      loadBalancer: {}
 parameters:
   - name: COMMON_REPLICAS
     value: "2"

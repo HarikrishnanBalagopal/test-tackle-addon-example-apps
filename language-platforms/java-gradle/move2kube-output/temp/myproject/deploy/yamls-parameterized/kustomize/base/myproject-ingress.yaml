@@ -16,7 +16,7 @@ spec:
                     service:
                         name: java-gradle
                         port:
-                            name: port-9080
+                            name: port-8080
                   path: /java-gradle
                   pathType: Prefix
 status:

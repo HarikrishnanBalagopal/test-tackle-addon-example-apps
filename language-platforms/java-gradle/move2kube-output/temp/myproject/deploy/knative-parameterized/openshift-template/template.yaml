@@ -35,7 +35,7 @@ objects:
               imagePullPolicy: Always
               name: java-gradle
               ports:
-                - containerPort: 9080
+                - containerPort: 8080
               resources: {}
           restartPolicy: Always
           securityContext: {}

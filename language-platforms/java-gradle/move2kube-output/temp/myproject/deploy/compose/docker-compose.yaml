@@ -4,5 +4,5 @@ services:
     container_name: java-gradle
     image: quay.io/myproject/java-gradle:latest
     ports:
-      - target: 9080
+      - target: 8080
         published: 8080

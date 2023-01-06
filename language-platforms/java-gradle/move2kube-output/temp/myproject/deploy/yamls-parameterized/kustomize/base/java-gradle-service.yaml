@@ -9,9 +9,9 @@ metadata:
     name: java-gradle
 spec:
     ports:
-        - name: port-9080
-          port: 9080
-          targetPort: 9080
+        - name: port-8080
+          port: 8080
+          targetPort: 8080
     selector:
         move2kube.konveyor.io/service: java-gradle
     type: ClusterIP
