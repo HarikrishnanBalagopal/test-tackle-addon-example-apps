@@ -1,0 +1,67 @@
+move2kube:
+  minreplicas: "2"
+  services:
+    java-gradle:
+      "9080":
+        servicetype: Ingress
+        urlpath: /java-gradle
+      childModules:
+        java-gradle:
+          port: "8080"
+      dockerfileType: build stage in base image
+      enable: true
+      wartransformer: Liberty
+  spawncontainers: false
+  target:
+    default:
+      clustertype: Kubernetes
+      ingress:
+        host: myproject.com
+        ingressclassname: ""
+        tls: ""
+    imageregistry:
+      namespace: myproject
+      quay.io:
+        logintype: no authentication
+      url: quay.io
+  transformers:
+    types:
+      - WarAnalyser
+      - CNBContainerizer
+      - OperatorTransformer
+      - ComposeAnalyser
+      - EarRouter
+      - EarAnalyser
+      - DockerfileImageBuildScript
+      - ZuulAnalyser
+      - DockerfileDetector
+      - DotNetCore-Dockerfile
+      - Rust-Dockerfile
+      - Parameterizer
+      - ArgoCD
+      - ComposeGenerator
+      - DockerfileParser
+      - Tekton
+      - Liberty
+      - Maven
+      - OperatorsFromTCA
+      - Python-Dockerfile
+      - Buildconfig
+      - PHP-Dockerfile
+      - Golang-Dockerfile
+      - Tomcat
+      - WarRouter
+      - Gradle
+      - ContainerImagesPushScriptGenerator
+      - KubernetesVersionChanger
+      - Jar
+      - Jboss
+      - Knative
+      - Ruby-Dockerfile
+      - Nodejs-Dockerfile
+      - Kubernetes
+      - ReadMeGenerator
+      - WinWebApp-Dockerfile
+      - ClusterSelector
+      - CloudFoundry
+  transformerselector: ""

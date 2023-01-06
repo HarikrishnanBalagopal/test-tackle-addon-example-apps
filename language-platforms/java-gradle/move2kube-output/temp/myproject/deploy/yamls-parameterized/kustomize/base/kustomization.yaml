@@ -1,0 +1,4 @@
+resources:
+  - java-gradle-deployment.yaml
+  - java-gradle-service.yaml
+  - myproject-ingress.yaml
